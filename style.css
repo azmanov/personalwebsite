@@ -5,15 +5,19 @@
 
 
 body {
-  font-family: "Open Sans";
-  background-color:#424242;
-  
-  max-width:1000px;
-  margin : 0 auto;
+    
+    font-family: "Open Sans";
+    background-color:#424242;
 
+    max-width:1200px;
+    margin : 0 auto;
 }
 
-/* General Text Formatting */
+
+
+   
+    /* General Text Formatting */
+
 
 h1 {
   font-family: Open Sans;
@@ -47,7 +51,7 @@ p {
 }
 
 
-                            /*HEADER STYLE */
+    /*HEADER STYLE */
 
 header {
   color:white;
@@ -59,7 +63,7 @@ header h1 {
 }
 
 
-                        /* MENU STYLE */
+    /* MENU STYLE */
 
 ul.menu {
   list-style-type: none;
@@ -150,6 +154,7 @@ aside img {
 }
 
 
+
 /*MAIN DIV STYLE */
 
 section#main {
@@ -165,20 +170,21 @@ width:79%;
 
 @media screen and (max-width:480px) {
 
-  ul.menu li a {
-
-    float:none;
-    border-bottom:1px solid lightgrey;
-  }
-
-  /*hides sidebar and menu makes #main section take up everything */
-      
-  .menu {
-    display:none;
-  }
-  
-  aside {
+    /*Styles the Menu Properly */
     
+    ul.menu li a {
+
+        float:none;
+        border-bottom:1px solid lightgrey;
+    }
+    
+    ul.menu li:last-child a {
+        border-bottom:none;
+    }
+  
+    /*hides sidebar. menu makes #main section take up everything */
+      
+  .menu, aside {
     display:none;
   }
 
@@ -187,5 +193,5 @@ width:79%;
     width:100%;
     float:none;
   }
-
+    
 }

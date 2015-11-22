@@ -9,15 +9,12 @@ body {
     font-family: "Open Sans";
     background-color:#424242;
 
-    max-width:1200px;
+    max-width:1260px;
     margin : 0 auto;
 }
 
-
-
    
     /* General Text Formatting */
-
 
 h1 {
   font-family: Open Sans;
@@ -167,7 +164,6 @@ width:79%;
 
 /*Responsive Code */ 
 
-
 @media screen and (max-width:480px) {
 
     /*Styles the Menu Properly */
@@ -195,3 +191,5 @@ width:79%;
   }
     
 }
+
+

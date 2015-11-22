@@ -4,14 +4,17 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor Elgersma</title>
-  <link rel="stylesheet" href="style.css">
-  
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="style.css">
+<!-- OPEN SANS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+<!-- JS -->
+     <script src="script.js"></script> 
 </head>
   
   <style>
-    
-    
     article {
       background-color:#EFEFEF;
       margin-top:15px;
@@ -36,7 +39,7 @@
       padding-bottom:3%;
     }
     
-  
+
   </style>
 
 <body>
@@ -49,17 +52,22 @@
   </h1>
 </header>
 
-  
-  <ul class="menu">
-      <li><a href="#" class = "menu">Start Here!</a></li>
-      <li><a href="blog.html" class = "menu">blog</a></li> <!-- find out why "active doesn't work -->
-      <li><a href="vfx.html" class = "menu" id = "active">vfx</a></li>
-      <li><a href="#" class = "menu">impossible list</a></li>
-      <li><a href="#" class = "menu">contact</a></li>
-      <li><a href="#" class = "menu">about</a></li>
+  <!-- MENU -->
+  <span class = "menu-trigger">MENU</span>
+    
+    <div class = "menu">
+      <ul>
+          <li><a href="#" class = "menu-item">Start Here!</a></li>
+          <li><a href="blog.html" class = "menu-item">blog</a></li>
+          <li><a href="vfx.html" class = "menu-item" id = "active">vfx</a></li>
+          <li><a href="#" class = "menu-item">linux</a></li>
+          <li><a href="#" class = "menu-item">impossible list</a></li>
+          <li><a href="#" class = "menu-item">contact</a></li>
+          <li><a href="#" class = "menu-item">about</a></li>
 
-  </ul> 
-
+      </ul> 
+    </div>
+<!-- /MENU -->
   
   
   

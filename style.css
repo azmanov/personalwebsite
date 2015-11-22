@@ -58,22 +58,21 @@ header h1 {
   padding:20px;
 }
 
+/* MENU STYLE */
 
-    /* MENU STYLE */
-
-ul.menu {
+div.menu {
   list-style-type: none;
   overflow: hidden; /* what is this */
   background-color:#333333;
 
 }
 
-ul.menu li{
+div.menu li{
   display:inline;
 }
 
 
-ul.menu li a {
+div.menu li a {
   
   /* makes links stack correctly */
   display:block;
@@ -94,12 +93,12 @@ ul.menu li a {
 
 /* sets the background color to blue for specific links */
 
-ul.menu a:hover, a#active {
+div.menu a:hover, a#active {
   background-color: #00CBD5;
   color:black;
 }
 
-
+  /* /MENU STYLE */
 
 
   /* SIDEBAR STYLE */
@@ -156,7 +155,7 @@ aside img {
 section#main {
   
 float:left;
-width:78%;
+width:77%;
 
 }
 
@@ -168,52 +167,54 @@ width:78%;
 
 }
 
-.nav-expanded {
+@media screen and (max-width:480px) {
+
+    /*Styles the Menu Properly */
+
+        div.menu ul li a {
+
+            float:none;
+            border-bottom:1px solid lightgrey;
+        }
+
+        div.menu li:last-child a {
+            border-bottom:none;
+        }
+
+        /* shows the menu trigger */
+        .menu-trigger {
+            display:block;
+            color: #305782;
+            background-color: #00CBD5;
+            padding: 10px;
+            text-align: right;
+            font-size: 83%;
+            cursor: pointer;
+        }
+
+/*Hides the menu by default*/        
+        div.menu {
+                display: none;
+            }
+/*displays the div with the nav-expanded class */
+        
+        div.nav-expanded {
             display: block;
         }
 
-@media screen and (max-width:520px) {
+        
+/*hides sidebar and menu, and makes #main section take up everything. */
 
-    /*Styles the Menu Properly */
-    
-    ul.menu li a {
+        aside {
+                display:none;
+            }
+        
+        section#main {
+                width:100%;
+            }
 
-        float:none;
-        border-bottom:1px solid lightgrey;
-    }
-    
-    ul.menu li:last-child a {
-        border-bottom:none;
-    }
-    
-    /* shows the menu trigger */
-    .menu-trigger {
-        display:block;
-        color: #305782;
-background-color: #00CBD5;
-padding: 10px;
-text-align: right;
-font-size: 83%;
-cursor: pointer;
-    }
-    
-    /*hides sidebar and menu, and makes #main section take up everything. Also makes the .nav expanded be a display:block; */
-      
-    div.menu {
-            display: none;
-        }
-    
-    aside {
-            display:none;
-        }
-    
-  section#main {
-
-            width:100%;
-        }
-    
 }
-
+    
 
 footer {
     float:bottom;

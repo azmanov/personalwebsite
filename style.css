@@ -12,7 +12,6 @@ body {
     max-width:1260px;
     margin : 0 auto;
 }
-
    
     /* General Text Formatting */
 
@@ -69,7 +68,7 @@ ul.menu {
 
 }
 
-ul.menu > li{
+ul.menu li{
   display:inline;
 }
 
@@ -81,8 +80,8 @@ ul.menu li a {
   float: left;
   
   /* makes links look sexy */
-  padding-top:15px;
-  padding-bottom:15px;
+  padding-top:12px;
+  padding-bottom:12px;
   padding-left:25px;
   padding-right:25px;
   
@@ -157,14 +156,23 @@ aside img {
 section#main {
   
 float:left;
-width:79%;
+width:78%;
 
 }
 
 
-/*Responsive Code */ 
+    /*Responsive Code */ 
 
-@media screen and (max-width:480px) {
+.menu-trigger {
+    display:none;
+
+}
+
+.nav-expanded {
+            display: block;
+        }
+
+@media screen and (max-width:520px) {
 
     /*Styles the Menu Properly */
     
@@ -177,19 +185,38 @@ width:79%;
     ul.menu li:last-child a {
         border-bottom:none;
     }
-  
-    /*hides sidebar. menu makes #main section take up everything */
+    
+    /* shows the menu trigger */
+    .menu-trigger {
+        display:block;
+        color: #305782;
+background-color: #00CBD5;
+padding: 10px;
+text-align: right;
+font-size: 83%;
+cursor: pointer;
+    }
+    
+    /*hides sidebar and menu, and makes #main section take up everything. Also makes the .nav expanded be a display:block; */
       
-  .menu, aside {
-    display:none;
-  }
-
+    div.menu {
+            display: none;
+        }
+    
+    aside {
+            display:none;
+        }
+    
   section#main {
 
-    width:100%;
-    float:none;
-  }
+            width:100%;
+        }
     
 }
 
+
+footer {
+    float:bottom;
+    clear:both;
+}
 

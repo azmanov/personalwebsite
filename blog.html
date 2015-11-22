@@ -4,18 +4,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Victor Elgersma</title>
-  <link rel="stylesheet" href="style.css">
-  
-  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="style.css">
+<!-- OPEN SANS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>      
+<!-- JS -->
+    <script src="script.js"></script>
 </head>
   
   <style>
-    
-    
 
     article {
       background-color:#EFEFEF;
-      margin-top:15px;
+      margin-top:2%;
       
       padding-top:5%;
       padding-bottom:5%;
@@ -31,15 +34,52 @@
       padding-bottom:3%;
     }
     
-    article img {
+    article > img {
       width:100%;
       padding-top:3%;
       padding-bottom:3%;
+        
+    }
+      
+      div#all-posts {
+       padding:2%;
+          background-color:#EFEFEF;
+
+          
+          
+      }
+      
+      div#all-posts h2 {
+        font-size:40px;
+        display:inline;
+      }
+      
+      div#all-posts span {
+        display:inline;
+
+      }
+    
+      <!-- Article menu styling. In case my blog grows, this is the starting point for a section by section blog menu 
+      
+    ul#article-menu {
+    list-style-type:none;
+        height:500px;
+        
+    }
+      
+    ul#article-menu li {
+        display:inline;
+        text-decoration:none;
+            background-color:red;
+
     }
     
-    
-    
-
+      ul#article-menu a {
+          color:black;
+          text-decoration:none;
+      }
+      
+      -->
   </style>
 
 <body>
@@ -52,16 +92,20 @@
   </h1>
 </header>
 
-  
-  <ul class="menu">
-      <li><a href="#" class = "menu">Start Here!</a></li>
-      <li><a href="blog.html" class = "menu" id = "active">blog</a></li> <!-- find out why "active doesn't work -->
-      <li><a href="vfx.html" class = "menu">vfx</a></li>
-      <li><a href="#" class = "menu">impossible list</a></li>
-      <li><a href="#" class = "menu">contact</a></li>
-      <li><a href="#" class = "menu">about</a></li>
+  <span class = "menu-trigger">MENU</span>
 
-  </ul> 
+    <div class = "menu">
+      <ul class="menu">
+          <li><a href="#" class = "menu">Start Here!</a></li>
+          <li><a href="blog.html" class = "menu" id = "active">blog</a></li>
+          <li><a href="vfx.html" class = "menu">vfx</a></li>
+          <li><a href="#" class = "menu">linux</a></li>
+          <li><a href="#" class = "menu">impossible list</a></li>
+          <li><a href="#" class = "menu">contact</a></li>
+          <li><a href="#" class = "menu">about</a></li>
+
+      </ul> 
+    </div>
 
   
   
@@ -69,15 +113,6 @@
 <!-- SIDEBAR -->
 
   <aside>
-
-   <!-- <a href = # class = 'sidebar-link' id = "popular-articles">
-
-      <h3>
-          
-        Popular Articles
-      </h3>
-
-    </a> -->
 
     <a class = 'sidebar-link' href ="#">
 
@@ -128,19 +163,29 @@
 
   <section id = "main">
 
-<!-- Article-menu -->
- <article id = "article-menu">
-	
-	<ul>
-		<li><a href = "">All Posts</a></li>
-		<li><a href = ''> School</a></li>
-		<li><a href = " ">Linux</a></li>
-		<li><a href = " "> Filmmaking" </a></li>
-		<li><a href = " "> Archive </a></li>
-	</ul>
-
- </article>
-
+<!--- An article menu bar. Just in case my blog grows
+      <div id = "article-menu-container">
+          
+          <ul id = "article-menu">
+              
+                <li><a href = "#">All Posts</a></li>
+                <li><a href = '#'> School</a></li>
+                <li><a href = "#">Linux</a></li>
+                <li><a href = "#"> Filmmaking</a></li>
+                <li><a href = "#"> Archive </a></li>
+           
+          </ul>
+      </div>
+       
+-->
+      <!--ALL POSTS 
+            
+   <div id = "all-posts">
+      
+      <h2>ALL POSTS</h2> <span "article-menu-trigger">SHOW</span>
+      
+      </div> -->
+      
       <!-- Article 1 -->
 
     <article> 
@@ -279,7 +324,7 @@
         leads to lower humidity)
       </p>
         
-        <img src = "images/ESSS-2.jpg" alt = "ESSS Picture">
+      <img src = "images/ESSS-2.jpg" alt = "ESSS Picture">
       <p>
         The trip to Munich, where the competition took place, lasted 4
 

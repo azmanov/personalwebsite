@@ -3,16 +3,20 @@
   padding:0px;
 }
 
+/* Setting Color Vars */
+
+
 
 body {
     
     font-family: "Open Sans";
-    background-color:#424242;
-
-    max-width:1260px;
+    background-color:grey; /*color-dark-bg */
+    
+    max-width:1220px;
     margin : 0 auto;
 }
    
+
     /* General Text Formatting */
 
 h1 {
@@ -64,6 +68,7 @@ div.menu {
   list-style-type: none;
   overflow: hidden; /* what is this */
   background-color:#333333;
+    margin-bottom:5px;
 
 }
 
@@ -81,8 +86,8 @@ div.menu li a {
   /* makes links look sexy */
   padding-top:12px;
   padding-bottom:12px;
-  padding-left:25px;
-  padding-right:25px;
+  padding-left:20px;
+  padding-right:20px;
   
   font-weight: bold;
   color: #FFFFFF;
@@ -100,13 +105,41 @@ div.menu a:hover, a#active {
 
   /* /MENU STYLE */
 
+/*MAIN-CONTAINER STYLE */ 
+div.main-container {
+    background-color:white;
+}
 
   /* SIDEBAR STYLE */
 
+/*CONTACT STYLE*/
 
-aside h2 {
-  display:inline;
+div.contact img {
+    width:18%;
+    min-width:12px;
+    height:auto;
+    margin:3px;
 }
+
+div.contact h3 {
+    color:aliceblue;
+    font-weight:700;
+    font-size:16px;
+    margin-bottom:10px;
+}
+
+div.contact {
+    height:auto;
+    background-color:#333333;
+    padding:15px;
+    
+    margin:0 auto;
+
+    
+}
+
+/* /CONTACT STYLE */
+
 
 aside {
 float:right;
@@ -125,12 +158,6 @@ max-width:20%;
  
 
   background-color: #EFEFEF;
-
-}
-
-
-.sidebar-link:first-child {
-  margin-top:15px;
 }
 
 aside a {
@@ -139,12 +166,11 @@ aside a {
   color:black;
 }
 
-aside a:hover {
+aside a.sidebar-link:hover {
   background-color:#00CBD5; 
 }
 
 aside img {
-  /* width:200px; */
   height:100px;
 }
 
@@ -155,19 +181,37 @@ aside img {
 section#main {
   
 float:left;
-width:77%;
+width:78%;
 
 }
 
+section#main img {
+    width:100%;
+}
+
+
 
     /*Responsive Code */ 
+@media screen and (max-width:780px){
+    
+    /*hides sidebar and menu, and makes #main section take up everything. */
+
+        aside {
+                display:none;
+            }
+        
+        section#main {
+                width:100%;
+            }
+    
+}
 
 .menu-trigger {
     display:none;
 
 }
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:680px) {
 
     /*Styles the Menu Properly */
 
@@ -202,22 +246,35 @@ width:77%;
             display: block;
         }
 
-        
-/*hides sidebar and menu, and makes #main section take up everything. */
-
-        aside {
-                display:none;
-            }
-        
-        section#main {
-                width:100%;
-            }
+    
 
 }
     
-
+/*FOOTER */
 footer {
+    background-color:#00CBD5;
+    height:30px;
+    width:auto;
     float:bottom;
     clear:both;
+    color:white;
+    padding:10px;
+    font-size:16;
+}
+
+footer a {
+    display:block;
+    float:right;
+}
+
+footer p {
+    display:block;
+    float:left;
+    font-size:12px;
+}
+
+div.ghost-area {
+    height:100px;
+    color:grey; /*color-dark-bg*/
 }
 

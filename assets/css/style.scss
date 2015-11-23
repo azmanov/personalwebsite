@@ -1,37 +1,46 @@
+/* Color Scheme */
+
+$color-bg:black;
+
+$color-hover:#00CBD5;
+
+$color-menu:#333333;
+
+$color-main:white;
+
+/* */
+
+/*Defaults */
+
 * {
   margin:0px;
   padding:0px;
 }
 
-/* Setting Color Vars // the only reasons I am using sass is to easily switch between color schemes */
-
-$color-bg:blue;
-
-$color-hover:#00CBD5;
-
 body {
-    
+
     font-family: "Open Sans";
     background-color:$color-bg;
-    
+
     max-width:1220px;
     margin : 0 auto;
 }
-   
 
-    /* General Text Formatting */
+/* */
+
+/* General Text Formatting */
 
 h1 {
   font-family: Open Sans;
   font-size: 36px;
-  
+
   font-weight: 500;
 }
 
 h2 {
   font-family: Open Sans;
   font-size: 24px;
- 
+
   font-weight: 900;
   line-height: 15.4px;
 }
@@ -47,11 +56,12 @@ h3 {
 p {
   font-family: Open Sans;
   font-size: 15px;
- 
+
   font-weight: 400;
   line-height: 20px;
 }
 
+/* */
 
     /*HEADER STYLE */
 
@@ -69,7 +79,7 @@ header h1 {
 div.menu {
   list-style-type: none;
   overflow: hidden; /* what is this */
-  background-color:#333333; /*color-2 */
+  background-color:$color-menu;
     margin-bottom:5px;
 
 }
@@ -80,20 +90,20 @@ div.menu li{
 
 
 div.menu li a {
-  
+
   /* makes links stack correctly */
   display:block;
   float: left;
-  
+
   /* makes links look sexy */
   padding-top:12px;
   padding-bottom:12px;
   padding-left:20px;
   padding-right:20px;
-  
+
   font-weight: bold;
   color: #FFFFFF;
-  background-color: #333333;
+  background-color: $color-menu;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -107,7 +117,7 @@ div.menu a:hover, a#active {
 
   /* /MENU STYLE */
 
-/*MAIN-CONTAINER STYLE */ 
+/*MAIN-CONTAINER STYLE */
 div.main-container {
 }
 
@@ -124,7 +134,7 @@ div.contact img {
 }
 
 div.contact h3 {
-    color:aliceblue;
+    color:$color-main;
     font-weight:700;
     font-size:90%;
     margin-bottom:10px;
@@ -132,12 +142,12 @@ div.contact h3 {
 
 div.contact {
     height:auto;
-    background-color:#333333;
+    background-color:$color-menu;
     padding:15px;
-    
+
     margin:0 auto;
 
-    
+
 }
 
 /* /CONTACT STYLE */
@@ -152,14 +162,14 @@ max-width:20%;
   font-size: 12px;
   display:block;
 
-  
+
   width:auto;
   height:auto;
   margin-top:10px;
   padding:10px;
- 
 
-  background-color: #EFEFEF;
+
+  background-color:$color-main;
 }
 
 aside a {
@@ -181,7 +191,7 @@ aside img {
 /*MAIN DIV STYLE */
 
 section#main {
-  
+
 float:left;
 width:78%;
 
@@ -193,19 +203,19 @@ section#main img {
 
 
 
-    /*Responsive Code */ 
+    /*Responsive Code */
 @media screen and (max-width:780px){
-    
+
     /*hides sidebar and menu, and makes #main section take up everything. */
 
         aside {
                 display:none;
             }
-        
+
         section#main {
                 width:100%;
             }
-    
+
 }
 
 .menu-trigger {
@@ -230,28 +240,28 @@ section#main img {
         /* shows the menu trigger */
         .menu-trigger {
             display:block;
-            color: #305782;
-            background-color: #00CBD5;
+            color:white;
+            background-color: $color-menu;
             padding: 10px;
             text-align: right;
             font-size: 83%;
             cursor: pointer;
         }
 
-/*Hides the menu by default*/        
+/*Hides the menu by default*/
         div.menu {
                 display: none;
             }
 /*displays the div with the nav-expanded class */
-        
+
         div.nav-expanded {
             display: block;
         }
 
-    
+
 
 }
-    
+
 /*FOOTER */
 footer {
     background-color:$color-hover;
@@ -279,4 +289,3 @@ div.ghost-area {
     height:100px;
     color:$color-bg;
 }
-

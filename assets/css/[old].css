@@ -10,7 +10,7 @@
 body {
     
     font-family: "Open Sans";
-    background-color:grey; /*color-dark-bg */
+    background-color:grey; /*color-1 */
     
     max-width:1220px;
     margin : 0 auto;
@@ -67,7 +67,7 @@ header h1 {
 div.menu {
   list-style-type: none;
   overflow: hidden; /* what is this */
-  background-color:#333333;
+  background-color:#333333; /*color-2 */
     margin-bottom:5px;
 
 }
@@ -91,7 +91,7 @@ div.menu li a {
   
   font-weight: bold;
   color: #FFFFFF;
-  background-color: #333333;
+  background-color: #333333; /*color-2 */
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -99,7 +99,7 @@ div.menu li a {
 /* sets the background color to blue for specific links */
 
 div.menu a:hover, a#active {
-  background-color: #00CBD5;
+  background-color: #00CBD5; /*color-3 */
   color:black;
 }
 
@@ -107,7 +107,6 @@ div.menu a:hover, a#active {
 
 /*MAIN-CONTAINER STYLE */ 
 div.main-container {
-    background-color:white;
 }
 
   /* SIDEBAR STYLE */
@@ -117,6 +116,7 @@ div.main-container {
 div.contact img {
     width:18%;
     min-width:12px;
+    max-width:25px;
     height:auto;
     margin:3px;
 }
@@ -124,13 +124,13 @@ div.contact img {
 div.contact h3 {
     color:aliceblue;
     font-weight:700;
-    font-size:16px;
+    font-size:90%;
     margin-bottom:10px;
 }
 
 div.contact {
     height:auto;
-    background-color:#333333;
+    background-color:#333333; /*color-2 */
     padding:15px;
     
     margin:0 auto;
@@ -157,7 +157,7 @@ max-width:20%;
   padding:10px;
  
 
-  background-color: #EFEFEF;
+  background-color: #EFEFEF; /*color-4*/
 }
 
 aside a {
@@ -167,7 +167,7 @@ aside a {
 }
 
 aside a.sidebar-link:hover {
-  background-color:#00CBD5; 
+  background-color:#00CBD5; /*color-3 */
 }
 
 aside img {
@@ -229,7 +229,7 @@ section#main img {
         .menu-trigger {
             display:block;
             color: #305782;
-            background-color: #00CBD5;
+            background-color: #00CBD5; /*color-3 */
             padding: 10px;
             text-align: right;
             font-size: 83%;
@@ -252,7 +252,7 @@ section#main img {
     
 /*FOOTER */
 footer {
-    background-color:#00CBD5;
+    background-color:#00CBD5; /*color-3 */
     height:30px;
     width:auto;
     float:bottom;
@@ -275,6 +275,6 @@ footer p {
 
 div.ghost-area {
     height:100px;
-    color:grey; /*color-dark-bg*/
+    color:grey; /*color-1*/
 }
 

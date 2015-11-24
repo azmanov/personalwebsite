@@ -1,5 +1,4 @@
 /* Color Scheme */
-/* */
 /*Defaults */
 * {
   margin: 0px;
@@ -7,7 +6,7 @@
 
 body {
   font-family: "Open Sans";
-  background-color: black;
+  background-color: #424242;
   max-width: 1220px;
   margin: 0 auto; }
 
@@ -47,14 +46,14 @@ header h1 {
 
 /* MENU STYLE */
 div.menu {
-  list-style-type: none;
   overflow: hidden;
   /* what is this */
   background-color: #333333;
   margin-bottom: 5px; }
 
 div.menu li {
-  display: inline; }
+  display: inline;
+  font-size: 15px; }
 
 div.menu li a {
   /* makes links stack correctly */
@@ -73,13 +72,9 @@ div.menu li a {
 
 /* sets the background color to blue for specific links */
 div.menu a:hover, a#active {
-  background-color: #00CBD5;
+  background-color: #00CCD6;
   color: black; }
 
-/* /MENU STYLE */
-/*MAIN-CONTAINER STYLE */
-/* SIDEBAR STYLE */
-/*CONTACT STYLE*/
 div.contact img {
   width: 18%;
   min-width: 12px;
@@ -88,7 +83,7 @@ div.contact img {
   margin: 3px; }
 
 div.contact h3 {
-  color: white;
+  color: #FFFFFF;
   font-weight: 700;
   font-size: 90%;
   margin-bottom: 10px; }
@@ -99,7 +94,6 @@ div.contact {
   padding: 15px;
   margin: 0 auto; }
 
-/* /CONTACT STYLE */
 aside {
   float: right;
   max-width: 20%; }
@@ -111,7 +105,7 @@ aside {
   height: auto;
   margin-top: 10px;
   padding: 10px;
-  background-color: white; }
+  background-color: #FFFFFF; }
 
 aside a {
   text-align: center;
@@ -119,10 +113,16 @@ aside a {
   color: black; }
 
 aside a.sidebar-link:hover {
-  background-color: #00CBD5; }
+  background-color: #EEEFEF; }
 
 aside img {
   height: 100px; }
+
+/* main-container */
+div.main-container {
+  width: auto;
+  height: 100px;
+  border: 2px solid black; }
 
 /*MAIN DIV STYLE */
 section#main {
@@ -132,22 +132,45 @@ section#main {
 section#main img {
   width: 100%; }
 
+article {
+  background-color: #FFFFFF;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  margin-bottom: 15px; }
+
+article:last-child {
+  margin-bottom: 0px; }
+
+article p, h2 {
+  padding: 4%;
+  padding-top: 1%;
+  padding-bottom: 1%; }
+
+article h2 {
+  padding-bottom: 3%; }
+
+article > img {
+  width: 100%;
+  padding-top: 3%;
+  padding-bottom: 3%; }
+
+/**/
 /*Responsive Code */
-@media screen and (max-width: 780px) {
+.menu-trigger {
+  display: none; }
+
+@media screen and (max-width: 720px) {
   /*hides sidebar and menu, and makes #main section take up everything. */
   aside {
     display: none; }
 
   section#main {
     width: 100%; } }
-.menu-trigger {
-  display: none; }
-
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 720px) {
   /*Styles the Menu Properly */
   div.menu ul li a {
     float: none;
-    border-bottom: 1px solid lightgrey; }
+    border-bottom: 1px solid #00CCD6; }
 
   div.menu li:last-child a {
     border-bottom: none; }
@@ -156,22 +179,20 @@ section#main img {
   .menu-trigger {
     display: block;
     color: white;
-    background-color: #333333;
+    background-color: #00CCD6;
     padding: 10px;
     text-align: right;
-    font-size: 83%;
     cursor: pointer; }
 
-  /*Hides the menu by default*/
+  /*Hides the menu, except when its class is .nav-expanded*/
   div.menu {
     display: none; }
 
-  /*displays the div with the nav-expanded class */
   div.nav-expanded {
     display: block; } }
 /*FOOTER */
 footer {
-  background-color: #00CBD5;
+  background-color: #00CCD6;
   height: 30px;
   width: auto;
   float: bottom;
@@ -191,6 +212,6 @@ footer p {
 
 div.ghost-area {
   height: 100px;
-  color: black; }
+  color: #424242; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,156 @@
+/* Color Scheme */
+$color-main:#FFFFFF;
+$color-bg:#424242;
+$color-hover:#00CCD6;
+$color-menu:#333333;
+$color-hover2:#EEEFEF;
+
+/*Defaults */
+
+* {
+  margin:0px;
+  padding:0px;
+}
+
+body {
+    font-family: "Open Sans";
+    background-color:$color-bg;
+
+    max-width:1220px;
+    margin : 0 auto;
+}
+
+/* */
+
+@import "typography.scss";
+
+    /*HEADER STYLE */
+
+header {
+  color:white;
+  height:100px;
+}
+
+header h1 {
+  padding:20px;
+}
+
+// Import Header CSS
+@import "menu.scss";
+
+@import "sidebar.scss";
+
+/* main-container */
+
+div.main-container {
+  width:auto;
+  height:100px;;
+  border:2px solid black;
+}
+
+/*MAIN DIV STYLE */
+
+section#main {
+
+float:left;
+width:78%;
+
+}
+
+section#main img {
+    width:100%;
+}
+
+article {
+    background-color:$color-main;
+    padding-top:5%;
+    padding-bottom:5%;
+    margin-bottom:15px;
+}
+
+article:last-child{
+    margin-bottom:0px;
+}
+
+article p, h2 {
+  padding:4%;
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+article p.date {
+    }
+
+article h2 {
+  padding-bottom:3%;
+}
+
+article > img {
+  width:100%;
+  padding-top:3%;
+  padding-bottom:3%;
+
+}
+
+/**/
+
+
+/*Responsive Code */
+
+.menu-trigger {
+    display:none;
+}
+
+@media screen and (max-width:720px){
+
+/*hides sidebar and menu, and makes #main section take up everything. */
+
+  aside {
+    display:none;
+  }
+
+  section#main {
+    width:100%;
+  }
+
+}
+
+
+@media screen and (max-width:720px) {
+
+
+  /*Styles the Menu Properly */
+
+  div.menu ul li a {
+
+  float:none;
+  border-bottom:1px solid $color-hover;
+  }
+
+  div.menu li:last-child a {
+  border-bottom:none;
+  }
+
+      /* shows the menu trigger */
+  .menu-trigger {
+    display:block;
+    color:white;
+    background-color: $color-hover;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+  }
+
+  /*Hides the menu, except when its class is .nav-expanded*/
+
+  div.menu {
+    display: none;
+  }
+
+  div.nav-expanded {
+    display: block;
+  }
+
+}
+
+@import "footer.scss"

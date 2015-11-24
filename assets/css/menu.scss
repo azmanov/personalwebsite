@@ -1,0 +1,44 @@
+/* MENU STYLE */
+
+div.menu {
+  overflow: hidden; /* what is this */
+  background-color:$color-menu;
+  margin-bottom:5px;
+}
+
+div.menu li{
+  display:inline;
+  font-size:15px;
+}
+
+
+div.menu li a {
+
+  /* makes links stack correctly */
+  display:block;
+  float: left;
+
+  /* makes links look sexy */
+  padding-top:12px;
+  padding-bottom:12px;
+  padding-left:20px;
+  padding-right:20px;
+
+  font-weight: bold;
+  color: #FFFFFF;
+  background-color: $color-menu;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* sets the background color to blue for specific links */
+
+div.menu a:hover, a#active {
+  background-color:$color-hover;
+  color:black;
+}
+
+@media screen and (max-width:720px) {
+
+    
+}

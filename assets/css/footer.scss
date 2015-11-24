@@ -1,0 +1,27 @@
+/*FOOTER */
+footer {
+    background-color:$color-hover;
+    height:30px;
+    width:auto;
+    float:bottom;
+    clear:both;
+    color:white;
+    padding:10px;
+    font-size:16;
+}
+
+footer a {
+    display:block;
+    float:right;
+}
+
+footer p {
+    display:block;
+    float:left;
+    font-size:12px;
+}
+
+div.ghost-area {
+    height:100px;
+    color:$color-bg;
+}

@@ -1,6 +1,6 @@
 /* MENU STYLE */
 
-nav.menu ul.menu {
+ul.menu {
   overflow: hidden; /* what is this */
   background-color:$color-menu;
   margin-bottom:5px;
@@ -10,7 +10,6 @@ ul.menu li{
   display:inline;
   font-size:15px;
 }
-
 
 ul.menu li a {
 
@@ -38,7 +37,45 @@ ul.menu a:hover, a#active {
   color:black;
 }
 
+
+// RESPONSIVENESS
+
+//hides the menu trigger by default
+span.menu-trigger {
+    display:none;
+}
+
 @media screen and (max-width:720px) {
 
 
+    // MENU STYLES
+
+    ul.menu li a {
+    float:none;
+    border-bottom:1px solid $color-main;
+  }
+
+    ul.menu li:last-child a {
+    border-bottom:none;
+  }
+
+    // MENU TRIGGER STYLES
+   span.menu-trigger {
+    display:block;
+    color:white;
+    background-color: $color-hover;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+    }
+
+    /*Hides the menu, except when its class is .nav-expanded*/
+
+    ul.menu {
+      display: none;
+    }
+
+    ul.nav-expanded {
+      display: block;
+    }
 }

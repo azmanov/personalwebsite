@@ -1,0 +1,49 @@
+/*MAIN DIV STYLE */
+
+section#main {
+
+float:left;
+width:78%;
+
+}
+
+section#main img {
+    width:100%;
+}
+
+article {
+    background-color:$color-main;
+    padding-top:5%;
+    padding-bottom:5%;
+    margin-bottom:15px;
+}
+
+article:last-child{
+    margin-bottom:0px;
+}
+
+article p, h2 {
+  padding:4%;
+  padding-top:1%;
+  padding-bottom:1%;
+}
+
+article p.date {
+    }
+
+article h2 {
+  padding-bottom:3%;
+}
+
+article > img {
+  width:100%;
+  padding-top:3%;
+  padding-bottom:3%;
+}
+
+.center {
+  width:560px;
+  margin-left:auto;
+  margin-right:auto;
+}
+/**/

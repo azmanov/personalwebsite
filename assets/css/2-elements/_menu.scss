@@ -1,18 +1,17 @@
 /* MENU STYLE */
 
-div.menu {
+ul.menu {
   overflow: hidden; /* what is this */
   background-color:$color-menu;
   margin-bottom:5px;
 }
 
-div.menu li{
+ul.menu li{
   display:inline;
   font-size:15px;
 }
 
-
-div.menu li a {
+ul.menu li a {
 
   /* makes links stack correctly */
   display:block;
@@ -33,12 +32,49 @@ div.menu li a {
 
 /* sets the background color to blue for specific links */
 
-div.menu a:hover, a#active {
+ul.menu a:hover, a#active {
   background-color:$color-hover;
   color:black;
 }
 
+
+// RESPONSIVENESS
+
+//hides the menu trigger by default
+span.menu-trigger {
+    display:none;
+}
+
 @media screen and (max-width:720px) {
 
-    
+    // MENU STYLES
+
+    ul.menu li a {
+    float:none;
+    border-bottom:1px solid $color-main;
+  }
+
+    ul.menu li:last-child a {
+    border-bottom:none;
+  }
+
+    // MENU TRIGGER STYLES
+   span.menu-trigger {
+    display:block;
+    color:white;
+    background-color: $color-hover;
+    padding: 10px;
+    text-align: right;
+    cursor: pointer;
+    }
+
+    /*Hides the menu, except when its class is .nav-expanded*/
+
+    ul.menu {
+      display: none;
+    }
+
+    ul.nav-expanded {
+      display: block;
+    }
 }

@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      <title>Victor Elgersma</title>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victor Elgersma</title>
 
-        <!-- <link rel="stylesheet" href="styles/style.css"> -->
+<!-- MAIN STYLESHEET -->
+    <link rel = "stylesheet" href = "assets/css/main.css">
+<!-- OPEN SANS -->
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
 
-        <link rel = "stylesheet" href = "assets/css/main.css">
-    <!-- OPEN SANS -->
-        <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+<!-- SCRIPT IS AT BOTTOM -->
 
-        <!-- jQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- JS -->
+  <style>
+    article {
+      background-color:#EFEFEF;
+        padding:2%;
+    }
 
-    <script src="assets/js/script.js"></script>
+    article p, h2 {
+      padding:1%;
+    }
 
-    <style>
+    article h2 {
+        font-size:36px;
+    }
 
-      div#all-posts {
-       padding:2%;
-          background-color:#EFEFEF;
-      }
+    article img {
+      width:100%;
+      padding-top:3%;
+      padding-bottom:3%;
+    }
 
-      div#all-posts h2 {
-        font-size:40px;
-        display:inline;
-      }
-
-      div#all-posts span {
-        display:inline;
-
-      }
 
   </style>
 </head>
@@ -47,108 +46,109 @@
   </h1>
 </header>
 
-            <!-- MENU -->
+<!--MENU -->
+      <nav class="menu">
       <span class = "menu-trigger">MENU</span>
 
-      <div class = "menu">
-        <ul>
+        <ul class= "menu">
             <li><a href="#" class = "menu-item">Start Here!</a></li>
-            <li><a href=index.html" class = "menu-item" id = "active">blog</a></li>
+            <li><a href="index.html" class = "menu-item" id ="active"> blog</a></li>
             <li><a href="vfx.html" class = "menu-item">vfx</a></li>
             <li><a href="#" class = "menu-item">linux</a></li>
             <li><a href="#" class = "menu-item">impossible list</a></li>
             <li><a href="#" class = "menu-item">contact</a></li>
             <li><a href="#" class = "menu-item">about</a></li>
         </ul>
-    </div>
 
-            <!-- /MENU -->
+      </nav>
 
-            <div class = "main-container">
+<!-- MAIN AREA -->
 
-                    <!-- SIDEBAR -->
+      <div class = "main-container">
 
-                    <aside>
+<!-- SIDEBAR -->
 
-                  <div class = "contact">
-                    <h3>Say Hi :</h3>
+          <aside>
 
-                        <!--Facebook -->
-                        <a href="https://www.facebook.com/victor.elgersma.39" target="_blank"><img src="assets/img/icons/facebook.png"></a>
+              <div class = "contact">
+                <h3>Say Hi :</h3>
 
-                        <!--googleplus -->
-                        <a href="https://plus.google.com/117318801485804185816/posts" target="_blank"><img src="assets/img/icons/gplus.png"> </a>
+                    <!--Facebook -->
+                    <a href="https://www.facebook.com/victor.elgersma.39" target="_blank"><img src="assets/img/icons/facebook.png"></a>
 
-                        <!--Khanacademy -->
-                        <a href="https://www.khanacademy.org/profile/VictorAzmanov/" target="_blank"><img src="assets/img/icons/khanacademy.png"> </a>
+                    <!--googleplus -->
+                    <a href="https://plus.google.com/117318801485804185816/posts" target="_blank"><img src="assets/img/icons/gplus.png"> </a>
 
-                        <!--Reddit -->
-                        <a href="https://www.reddit.com/user/azmanov/" target="_blank"><img src="assets/img/icons/reddit.png"> </a>
+                    <!--Khanacademy -->
+                    <a href="https://www.khanacademy.org/profile/VictorAzmanov/" target="_blank"><img src="assets/img/icons/khanacademy.png"> </a>
 
-                        <!--Soundcloud -->
-                        <a href="https://soundcloud.com/victor-azmanov" target="_blank"><img src="assets/img/icons/soundcloud.png"> </a>
+                    <!--Reddit -->
+                    <a href="https://www.reddit.com/user/azmanov/" target="_blank"><img src="assets/img/icons/reddit.png"> </a>
 
-                        <!--YOUTUBE -->
-                        <a href="https://www.youtube.com/user/VictorsVisuals" target="_blank"><img src="assets/img/icons/youtube.png"> </a>
+                    <!--Soundcloud -->
+                    <a href="https://soundcloud.com/victor-azmanov" target="_blank"><img src="assets/img/icons/soundcloud.png"> </a>
 
-                        <!-- GITHUB -->
-                        <a href="https://www.github.com/azmanov" target="_blank"><img src="assets/img/icons/github.png"> </a>
+                    <!--YOUTUBE -->
+                    <a href="https://www.youtube.com/user/VictorsVisuals" target="_blank"><img src="assets/img/icons/youtube.png"> </a>
 
-                        <!-- Steam -->
-                        <a href="http://steamcommunity.com/profiles/76561198252983950/" target="_blank"><img src="assets/img/icons/steam.png"> </a>
+                    <!-- GITHUB -->
+                    <a href="https://www.github.com/azmanov" target="_blank"><img src="assets/img/icons/github.png"> </a>
 
-                        <!-- EMAIL LINK -->
-                        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><img src="assets/img/icons/gmail.png"> </a>
-                    </div>
+                    <!-- Steam -->
+                    <a href="http://steamcommunity.com/profiles/76561198252983950/" target="_blank"><img src="assets/img/icons/steam.png"> </a>
 
-                <a class = 'sidebar-link' href ="#">
+                    <!-- EMAIL LINK -->
+                    <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top"><img src="assets/img/icons/gmail.png"> </a>
+                </div>
 
-                  <img class = "sidebar-image" src = assets/img/GNU.png alt = "GNU">
-                  <h3>
-                    What I learned from the Richard Stallman Lecture
-                  </h3>
-                </a>
+            <a class = 'sidebar-link' href ="#">
 
-                <a class = 'sidebar-link' href ="#">
+              <img class = "sidebar-image" src = assets/img/GNU.png alt = "GNU">
+              <h3>
+                What I learned from the Richard Stallman Lecture
+              </h3>
+            </a>
 
-                  <img class = "sidebar-image" src = assets/img/plasma.png alt = "Plasma Pic">
-                  <h3>
-                    Plasma Physics Berkeley
-                  </h3>
-                </a>
+            <a class = 'sidebar-link' href ="#">
 
-                <a class = 'sidebar-link' href ="#">
+              <img class = "sidebar-image" src = assets/img/plasma.png alt = "Plasma Pic">
+              <h3>
+                Plasma Physics Berkeley
+              </h3>
+            </a>
 
-                  <img class = "sidebar-image" src = /tux.jpg alt = "Penguin">
-                  <h3>
-                    Why Schools should use Linux
-                  </h3>
-                </a>
+            <a class = 'sidebar-link' href ="#">
 
-                <a class = 'sidebar-link' href ="#">
+              <img class = "sidebar-image" src = /tux.jpg alt = "Penguin">
+              <h3>
+                Why Schools should use Linux
+              </h3>
+            </a>
 
-                  <img class = "sidebar-image" src = # alt = "Competition">
+            <a class = 'sidebar-link' href ="#">
 
-                <h3>
-                    RSC Chemistry Competition
-                  </h3>
+              <img class = "sidebar-image" src = # alt = "Competition">
 
-                </a>
+            <h3>
+                RSC Chemistry Competition
+              </h3>
 
-                <a class = 'sidebar-link' href ="#">
+            </a>
 
-                  <img class = "sidebar-image" src = # alt = "Macbook Pic">
-                  <h3>
-                    Fixing my Macbook
-                  </h3>
-                </a>
+            <a class = 'sidebar-link' href ="#">
 
-              </aside>
+              <img class = "sidebar-image" src = # alt = "Macbook Pic">
+              <h3>
+                Fixing my Macbook
+              </h3>
+            </a>
+
+          </aside>
 
 
-                    <!-- MAIN -->
+<!-- MAIN -->
 
-                    <section id = "main">
+          <section id = "main">
 
                   <!--ALL POSTS
 
@@ -160,10 +160,10 @@
 
                   <!-- Article 1 -->
 
-                <article>
-                  <h2>
-                      Royal Society Chemistry Competition
-                </h2>
+                  <article>
+                    <h2>
+                          Royal Society Chemistry Competition
+                    </h2>
 
                     <p class = "date">21/11/15</p>
                     <p> I got into our school's chemistry team for the second year in a row! That's gotta mean something, right?</p>
@@ -172,176 +172,204 @@
 
                     </p>
 
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
-                  </p>
-                </article>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
+                    </p>
+                  </article>
 
-                <!-- Article 2 -->
+                  <!-- Article 2 -->
 
-                <article>
-                  <h2>
+                  <article>
+
+                    <h2>
+                          Royal Society Chemistry Competition
+                    </h2>
+
+                    <p class = "date">21/11/15</p>
+
+                    <p>
+                      I got into our school's chemistry team for the second year in a row! That's gotta mean something, right?
+                    </p>
+
+                    <p>
+                      This Competition started off amazing. It got cancelled on Saturday because of the terrorist threats brussels has been having. Daesh is getting a bit annoying, am I right? It's kind of funny how the chemistry competition was cancelled because of explosion threats. Haha.
+                    </p>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
+                    </p>
+
+                  </article>
+
+                  <!-- Article 3 -->
+
+                  <article>
+                    <h2>
                       Green-go Film Competition
-                </h2>
+                    </h2>
 
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
-                  </p>
-                   <img src="assets/img/greengo.png">
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
-                  </p>
-                </article>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
+                    </p>
+
+                     <img src="assets/img/greengo.png">
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent dignissim tincidunt velit, scelerisque egestas ante varius nec. Nullam ac venenatis ipsum. Vivamus facilisis purus a laoreet blandit. Nam interdum auctor lacinia. Sed dictum ante auctor tortor fermentum pulvinar sed a felis. Aliquam sagittis blandit mauris ut rutrum. Praesent volutpat, eros ac gravida venenatis, leo purus maximus neque, eget molestie velit nunc ac velit. Maecenas dignissim eros nunc, at lacinia lorem convallis id. Phasellus pretium lacus ut eros pretium interdum. Donec at accumsan nisi. Integer vitae varius ex. Sed vitae elementum orci. Nam ante augue, bibendum at fringilla a, lacinia ac lacus. In in est vitae sem pellentesque ultricies vel vel ante.
+                    </p>
+                  </article>
 
 
-                <!-- Article 2 -->
+                <!-- Article 4 -->
 
 
-                <article>
-                  <h2>
+                  <article>
+                    <h2>
                       ESSS 2015
-                  </h2>
+                    </h2>
 
+                    <p>
+                      We won!!! Well, second place…
+                    </p>
 
-                  <p>
-              We won!!! Well, second place…
-                  </p>
-                  <p>
-                    I am glad to inform everyone that EEB4 has claimed glory yet
+                    <p>
+                      I am glad to inform everyone that EEB4 has claimed glory yet
 
-                    again, by finishing second at the ESSS in Munich. I would like to
+                      again, by finishing second at the ESSS in Munich. I would like to
 
-                    share the thrill, if not the glory, with everyone by recounting the
+                      share the thrill, if not the glory, with everyone by recounting the
 
-                    experience I had at Munich with my team of uncannily talented,
+                      experience I had at Munich with my team of uncannily talented,
 
-                    and freakishly lucky students (Isabelle Sabeva, Ioana Sabau, and
+                      and freakishly lucky students (Isabelle Sabeva, Ioana Sabau, and
 
-                    me - Victor Elgersma).
-                  </p>
+                      me - Victor Elgersma).
+                    </p>
 
-                  <img src = 'assets/img/ESSS-1.png' alt = "ESSS Picture">
-                  <p>
-                    Instead of telling you how great our project was, I will be frank
+                    <img src = 'assets/img/ESSS-1.png' alt = "ESSS Picture">
 
-                    and say that nearly everything went wrong. We got very excited
+                    <p>
+                      Instead of telling you how great our project was, I will be frank
 
-                    last summer about participating in this event, but when we started
+                      and say that nearly everything went wrong. We got very excited
 
-                    coming up with ideas, we immediately hit a brick wall. After
+                      last summer about participating in this event, but when we started
 
-                    scrutinizing the criteria, we decided to go with something we
+                      coming up with ideas, we immediately hit a brick wall. After
 
-                    deemed “significant”. Since global warming is such a hot (get it?) topic, we
+                      scrutinizing the criteria, we decided to go with something we
 
-                    wanted to plunge into a project related to it. Here’s the thing
+                      deemed “significant”. Since global warming is such a hot (get it?) topic, we
 
-                    about creativity: You can spend weeks thinking and thinking and
+                      wanted to plunge into a project related to it. Here’s the thing
 
-                    not coming up with anything, but an idea can also hit you
+                      about creativity: You can spend weeks thinking and thinking and
 
-                    completely out of the blue. But it didn’t hit us. So, in the total
+                      not coming up with anything, but an idea can also hit you
 
-                    absence of a ‘eureka’ moment, we decided to go with the most
+                      completely out of the blue. But it didn’t hit us. So, in the total
 
-                    obvious choice: investigating how a rise in temperature affects
+                      absence of a ‘eureka’ moment, we decided to go with the most
 
-                    plants. Trivial, isn’t it? We naively decided to go for this
+                      obvious choice: investigating how a rise in temperature affects
 
-                    experiment even though we had absolutely no access to growth
+                      plants. Trivial, isn’t it? We naively decided to go for this
 
-                    chambers of any kind (to control the temperature). Second brick
+                      experiment even though we had absolutely no access to growth
 
-                    wall: It turned out that it costs thousands of euros to rent a
+                      chambers of any kind (to control the temperature). Second brick
 
-                    growth chamber. Since renting was not an option, we almost gave
+                      wall: It turned out that it costs thousands of euros to rent a
 
-                    up on the experiment, until we emailed a bunch of people from the
+                      growth chamber. Since renting was not an option, we almost gave
 
-                    VUB in a last attempt to get access to growth chambers. While
+                      up on the experiment, until we emailed a bunch of people from the
 
-                    most people ignored us, one professor agreed to help us out.
+                      VUB in a last attempt to get access to growth chambers. While
 
-                    Incredibly, we were allowed to use the growth chambers for free,
+                      most people ignored us, one professor agreed to help us out.
 
-                    and we were also supplied with seeds and other equipment by the
+                      Incredibly, we were allowed to use the growth chambers for free,
 
-                    university.
+                      and we were also supplied with seeds and other equipment by the
 
-                  </p>
-                  <p>
-                    Just when it seemed like our project was actually going to work,
+                      university.
+                    </p>
 
-                    our experiment was utterly ruined. We had accidentally given our
+                    <p>
+                      Just when it seemed like our project was actually going to work,
 
-                    plants twice the amount of water we were supposed to. Since
+                      our experiment was utterly ruined. We had accidentally given our
 
-                    water was supposed to be a constant variable, this was a huge
+                      plants twice the amount of water we were supposed to. Since
 
-                    problem. First came disbelief, then anger, then frustration. At this
+                      water was supposed to be a constant variable, this was a huge
 
-                    point we were too invested in the experiment to quit, so we made
+                      problem. First came disbelief, then anger, then frustration. At this
 
-                    the best of it. After hours of deliberation, we were able to turn the
+                      point we were too invested in the experiment to quit, so we made
 
-                    mistake into an advantage which actually ended up making our
+                      the best of it. After hours of deliberation, we were able to turn the
 
-                    experiment much more interesting. We grew another group of
+                      mistake into an advantage which actually ended up making our
 
-                    plants, and the plants in the “failed” group allowed us to isolate
+                      experiment much more interesting. We grew another group of
 
-                    the effect of temperature from the effect of humidity, as a rise in
+                      plants, and the plants in the “failed” group allowed us to isolate
 
-                    temperature naturally leads to higher levels of evaporation (which
+                      the effect of temperature from the effect of humidity, as a rise in
 
-                    leads to lower humidity)
-                  </p>
+                      temperature naturally leads to higher levels of evaporation (which
 
-                  <img src = "assets/img/ESSS-2.jpg" alt = "ESSS Picture">
-                  <p>
-                    The trip to Munich, where the competition took place, lasted 4
+                      leads to lower humidity)
+                    </p>
 
-                    days, and the European School of Munich provided a bunch of fun
+                    <img src = "assets/img/ESSS-2.jpg" alt = "ESSS Picture">
+                    <p>
+                      The trip to Munich, where the competition took place, lasted 4
 
-                    activities. We visited a salt mine, saw BMW World, the Allianz
+                      days, and the European School of Munich provided a bunch of fun
 
-                    arena, and went bowling. Amazingly, ES Munich was even able to
+                      activities. We visited a salt mine, saw BMW World, the Allianz
 
-                    squeeze in some scientific activities as well. After presenting our
+                      arena, and went bowling. Amazingly, ES Munich was even able to
 
-                    projects to a 2-person jury (a physicist and an engineer), the
+                      squeeze in some scientific activities as well. After presenting our
 
-                    finalists were announced. We then had the nerve-racking
+                      projects to a 2-person jury (a physicist and an engineer), the
 
-                    experience of preparing to present the following day in front of the
+                      finalists were announced. We then had the nerve-racking
 
-                    entire jury and all the participants. All went well (despite me
+                      experience of preparing to present the following day in front of the
 
-                    forgetting a couple of lines, for which my teammates forgave me
+                      entire jury and all the participants. All went well (despite me
 
-                    way too easily) and the prizes were given out on the last day.
-                  </p>
-                  <p>
-                    We would like to thank Mr Edelin for encouraging us throughout
+                      forgetting a couple of lines, for which my teammates forgave me
 
-                    the trip to Munich, Mr Mac Alister for being an awesome mentor,
+                      way too easily) and the prizes were given out on the last day.
+                    </p>
 
-                    and Bram Vancompernolle (a doctoral student at the VUB) for
+                    <p>
+                      We would like to thank Mr Edelin for encouraging us throughout
 
-                    helping us with the VUB laboratory. They would probably protest
+                      the trip to Munich, Mr Mac Alister for being an awesome mentor,
 
-                    and say that they were just doing their work. They were not. They
+                      and Bram Vancompernolle (a doctoral student at the VUB) for
 
-                    did go out of their way to keep us going, often despite the odds,
+                      helping us with the VUB laboratory. They would probably protest
 
-                    and despite our desire to quit. If there is anything we’ve learned
+                      and say that they were just doing their work. They were not. They
 
-                    for sure from this experience, it is that brick walls are thinner than
+                      did go out of their way to keep us going, often despite the odds,
 
-                    they seem.
-                  </p>
+                      and despite our desire to quit. If there is anything we’ve learned
 
-                </article>
+                      for sure from this experience, it is that brick walls are thinner than
+
+                      they seem.
+                    </p>
+
+                  </article>
 
               </section>
 

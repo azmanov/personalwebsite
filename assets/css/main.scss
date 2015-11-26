@@ -22,7 +22,7 @@ body {
 
 /* */
 
-@import "typography.scss";
+@import "1-tools/_typography.scss";
 
     /*HEADER STYLE */
 
@@ -36,9 +36,9 @@ header h1 {
 }
 
 // Import Header CSS
-@import "menu.scss";
+@import "2-elements/_menu.scss";
 
-@import "sidebar.scss";
+@import "2-elements/_sidebar.scss";
 
 /* main-container */
 
@@ -153,4 +153,4 @@ article > img {
 
 }
 
-@import "footer.scss"
+@import "2-elements/_footer.scss"

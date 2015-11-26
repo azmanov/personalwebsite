@@ -45,17 +45,17 @@ header h1 {
   padding: 20px; }
 
 /* MENU STYLE */
-div.menu {
+nav.menu ul.menu {
   overflow: hidden;
   /* what is this */
   background-color: #333333;
   margin-bottom: 5px; }
 
-div.menu li {
+ul.menu li {
   display: inline;
   font-size: 15px; }
 
-div.menu li a {
+ul.menu li a {
   /* makes links stack correctly */
   display: block;
   float: left;
@@ -71,7 +71,7 @@ div.menu li a {
   text-transform: uppercase; }
 
 /* sets the background color to blue for specific links */
-div.menu a:hover, a#active {
+ul.menu a:hover, a#active {
   background-color: #00CCD6;
   color: black; }
 

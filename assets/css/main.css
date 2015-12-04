@@ -1,5 +1,5 @@
 /* Color Scheme */
-/*Defaults */
+/* / */
 * {
   margin: 0px;
   padding: 0px; }
@@ -43,7 +43,6 @@ header h1 {
   padding: 20px; }
 
 /* MENU STYLE */
-
 ul.menu {
   overflow: hidden;
   /* what is this */
@@ -150,24 +149,21 @@ section#main {
 section#main img {
   width: 100%; }
 
-article {
+section#main article {
   background-color: #FFFFFF;
   padding-top: 5%;
   padding-bottom: 5%;
   margin-bottom: 15px; }
 
-article:last-child {
-  margin-bottom: 0px; }
+section#main article h2 {
+  font-size: 20px; }
 
-article p, h2 {
-  padding: 4%;
-  padding-top: 1%;
-  padding-bottom: 1%; }
+p.date {
+  font-style: italic;
+  font-size: 12px;
+  margin-bottom: 3%; }
 
-article h2 {
-  padding-bottom: 3%; }
-
-article > img {
+section#main article img {
   width: 100%;
   padding-top: 3%;
   padding-bottom: 3%; }
@@ -177,13 +173,10 @@ article > img {
   margin-left: auto;
   margin-right: auto; }
 
-/**/
-@media screen and (max-width: 720px) {
-  aside {
-    display: none; }
+section#main article:last-child {
+  margin-bottom: 0px; }
 
-  section#main {
-    width: 100%; } }
+/**/
 /*FOOTER */
 footer {
   background-color: #00CCD6;
@@ -207,5 +200,12 @@ footer p {
 div.ghost-area {
   height: 100px;
   color: #424242; }
+
+@media screen and (max-width: 720px) {
+  aside {
+    display: none; }
+
+  section#main {
+    width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */

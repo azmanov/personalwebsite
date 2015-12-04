@@ -1,41 +1,32 @@
 /*MAIN DIV STYLE */
 
 section#main {
-
-float:left;
-width:78%;
-
+  float:left;
+  width:78%;
 }
 
 section#main img {
     width:100%;
 }
 
-article {
+section#main article {
     background-color:$color-main;
     padding-top:5%;
     padding-bottom:5%;
     margin-bottom:15px;
 }
 
-article:last-child{
-    margin-bottom:0px;
+section#main article h2 {
+  font-size:20px;
 }
 
-article p, h2 {
-  padding:4%;
-  padding-top:1%;
-  padding-bottom:1%;
+p.date {
+  font-style: italic;
+  font-size:12px;
+  margin-bottom:3%;
 }
 
-article p.date {
-    }
-
-article h2 {
-  padding-bottom:3%;
-}
-
-article > img {
+section#main article img {
   width:100%;
   padding-top:3%;
   padding-bottom:3%;
@@ -46,4 +37,9 @@ article > img {
   margin-left:auto;
   margin-right:auto;
 }
+
+section#main article:last-child{
+    margin-bottom:0px;
+}
+
 /**/

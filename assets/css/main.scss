@@ -5,7 +5,7 @@ $color-hover:#00CCD6;
 $color-menu:#333333;
 $color-hover2:#EEEFEF;
 
-/*Defaults */
+/* / */
 
 * {
   margin:0px;
@@ -15,7 +15,6 @@ $color-hover2:#EEEFEF;
 body {
   font-family: "Open Sans";
   background-color:$color-bg;
-
   max-width:1220px;
   margin : 0 auto;
 }
@@ -26,12 +25,6 @@ body {
 // Import Header Style
 @import "2-elements/_header.scss";
 
-
-// Import Header CSS
-@import "2-elements/_header.scss";
-
-@import "2-elements/_sidebar.scss";
-
 // Import Menu Style
 @import "2-elements/_menu.scss";
 
@@ -39,9 +32,12 @@ body {
 @import "2-elements/_sidebar.scss";
 
 //Import Main Content Style
-
 @import "2-elements/_maincontent.scss";
 
+// Import Footer Style
+@import "2-elements/_footer.scss";
+
+// RESPONSIVE CODE 1
 
 @media screen and (max-width:720px){
 
@@ -55,6 +51,3 @@ body {
     width:100%;
   }
 }
-
-// Import Footer Style
-@import "2-elements/_footer.scss"

@@ -1,5 +1,5 @@
-//SIDEBAR
-// CONTACT STYLE */
+
+// CONTACT STYLE 
 
 div.contact img {
   width:18%;
@@ -20,27 +20,22 @@ div.contact {
   height:auto;
   background-color:$color-menu;
   padding:15px;
-
   margin:0 auto;
-
-
 }
 
 aside {
-float:right;
-max-width:20%;
+  float:right;
+  max-width:20%;
 }
 
 .sidebar-link {
   font-size: 12px;
   display:block;
 
-
   width:auto;
   height:auto;
   margin-top:10px;
   padding:10px;
-
 
   background-color:$color-main;
 }

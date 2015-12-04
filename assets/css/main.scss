@@ -13,21 +13,18 @@ $color-hover2:#EEEFEF;
 }
 
 body {
-    font-family: "Open Sans";
-    background-color:$color-bg;
+  font-family: "Open Sans";
+  background-color:$color-bg;
 
-    max-width:1220px;
-    margin : 0 auto;
+  max-width:1220px;
+  margin : 0 auto;
 }
-
-
 
 // Import Typography
 @import "1-tools/_typography.scss";
 
-// Import Header Sassy CSS
+// Import Header Style
 @import "2-elements/_header.scss";
-
 
 
 // Import Header CSS
@@ -35,13 +32,13 @@ body {
 
 @import "2-elements/_sidebar.scss";
 
-// Import Menu Sassy CSS
+// Import Menu Style
 @import "2-elements/_menu.scss";
 
-//Import Sidebar Sassy CSS
+//Import Sidebar Style
 @import "2-elements/_sidebar.scss";
 
-//Import Main Content Sassy CSS
+//Import Main Content Style
 
 @import "2-elements/_maincontent.scss";
 
@@ -59,4 +56,5 @@ body {
   }
 }
 
+// Import Footer Style
 @import "2-elements/_footer.scss"

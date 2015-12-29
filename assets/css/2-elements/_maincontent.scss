@@ -2,41 +2,38 @@
 
 section#main {
   float:left;
-  width:78%;
+  width:65%;
+  margin-left:5%;
+
+  position:relative; //covers up part of the image
+  bottom:70px;
 }
 
-section#main img {
-    width:100%;
-}
 
 section#main article {
     background-color:$color-main;
-    padding-top:5%;
     padding-bottom:5%;
     margin-bottom:15px;
+    padding-bottom:50px;
+    padding-top:50px;
+}
+
+article p, h2, h5{
+  margin-left:50px;
+  margin-right:50px;
 }
 
 section#main article h2 {
-  font-size:20px;
+  font-size:40px;
+  font-weight: bold;
 }
 
 p.date {
   font-style: italic;
   font-size:12px;
-  margin-bottom:3%;
+
 }
 
-section#main article img {
-  width:100%;
-  padding-top:3%;
-  padding-bottom:3%;
-}
-
-.center {
-  width:560px;
-  margin-left:auto;
-  margin-right:auto;
-}
 
 section#main article:last-child{
     margin-bottom:0px;

@@ -4,32 +4,40 @@ ul.menu {
   overflow: hidden; /* what is this */
   background-color:$color-menu;
   margin-bottom:5px;
+  -webkit-box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
+box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
+
 }
 
 ul.menu li{
-  display:inline;
+  display:block;
   font-size:15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-ul.menu li a {
+ul.menu a {
+  text-decoration:none;
+}
+
+ul.menu > li a {
 
   /* makes links stack correctly */
   display:block;
   float: left;
 
-  /* makes links look sexy */
-  padding-top:12px;
-  padding-bottom:12px;
-  padding-left:20px;
-  padding-right:20px;
+  /* makes links look good */
+  padding:15px 20px;
 
-  font-weight: bold;
-  color: #FFFFFF;
+  color: white;
   background-color: $color-menu;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
+div.separation {
+  width:300px;
+}
 /* sets the background color to blue for specific links */
 
 ul.menu a:hover, a#active {
@@ -38,7 +46,7 @@ ul.menu a:hover, a#active {
 }
 
 
-// RESPONSIVENESS
+// RESPONSIVE CODE
 
 //hides the menu trigger by default
 span.menu-trigger {

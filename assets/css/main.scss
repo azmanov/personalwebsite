@@ -4,8 +4,7 @@ $color-bg:#424242;
 $color-hover:#00CCD6;
 $color-menu:#333333;
 $color-hover2:#EEEFEF;
-
-/* / */
+$color-wrapper:#DEDEDE;
 
 * {
   margin:0px;
@@ -19,25 +18,37 @@ body {
   margin : 0 auto;
 }
 
-// Import Typography
+
+.main-container {
+  background-color:$color-wrapper;
+  overflow:auto;
+}
+
+.main-container > img {
+  width:100%;
+  z-index:-1;
+}
+
+// Typography
 @import "1-tools/_typography.scss";
 
-// Import Header Style
+// Header Style
 @import "2-elements/_header.scss";
 
-// Import Menu Style
+// Menu Style
 @import "2-elements/_menu.scss";
 
-//Import Sidebar Style
+// Sidebar Style
 @import "2-elements/_sidebar.scss";
 
-//Import Main Content Style
+//Main Content Style
 @import "2-elements/_maincontent.scss";
 
-// Import Footer Style
+//Footer Style
 @import "2-elements/_footer.scss";
 
-// RESPONSIVE CODE 1
+//RESPONSIVE CODE 1
+
 
 @media screen and (max-width:720px){
 
@@ -49,5 +60,11 @@ body {
 
   section#main {
     width:100%;
+    margin-left:0px;
   }
+
+  section#main article {
+    padding:50px 5px;
+  }
+
 }

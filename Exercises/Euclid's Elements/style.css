@@ -1,0 +1,43 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+table {
+  width:1000px;
+}
+
+.red {
+  color:red;
+  font-size:20px;
+}
+
+thead {
+  background-color:#996633
+}
+    
+.left {
+  background: #CCB299;
+  width:30%;
+}
+
+.centre {
+  background-color: #FFAD33;
+  padding:10px;
+  font-family: courier;
+  font-size:4; /* this doesnt do anything */
+}
+
+.right {
+  background: #CCB299;
+  font-weight: bolder;
+    
+}
+  
+img {
+ width:120px; 
+  height:120px;
+}
+.foot {
+  
+  background-color:#b5dcb3;
+}

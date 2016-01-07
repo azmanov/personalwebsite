@@ -1,28 +1,28 @@
 /* MENU STYLE */
 
-ul.menu {
+.menu {
   overflow: hidden; /* what is this */
   background-color:$color-menu;
   margin-bottom:5px;
   -webkit-box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
--moz-box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
-box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
-
+  -moz-box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
+  box-shadow: 0.2px 0px 2px 0px rgba(0,0,0,0.75);
 }
 
-ul.menu li{
-  display:block;
+.menu li{
   font-size:15px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  list-style-type:none;
 }
 
-ul.menu a {
-  text-decoration:none;
+.menu li a {
+  color: white;
+  text-decoration: none;
 }
 
-ul.menu > li a {
+.menu > li a {
 
   /* makes links stack correctly */
   display:block;
@@ -30,14 +30,36 @@ ul.menu > li a {
 
   /* makes links look good */
   padding:15px 20px;
-
-  color: white;
   background-color: $color-menu;
+
 }
 
-div.separation {
-  width:300px;
+.sub-menu {
+
+  display:none; /*hides menu by default */
+  width:200px;
+  background-color:#191919;
+  position:absolute;
+  top:150px;
+  left:362px;
+  box-shadow: 1px 1px 5px 0px rgba(0,1,0,0.75);
 }
+
+.menu > li:nth-child(4):hover .sub-menu{
+  display:block;
+}
+.sub-menu li a {
+  float:none;
+  display:block;
+  width:100%;
+  padding:10px 5px;
+  background-color:#191919
+
+}
+
+
+
+
 /* sets the background color to blue for specific links */
 
 ul.menu a:hover, a#active {
@@ -77,12 +99,15 @@ span.menu-trigger {
     cursor: pointer;
     }
 
-    /*Hides the menu, except when its class is .nav-expanded*/
+    /*Hides the menu, except when its class is .nav-expanded. Hides sub-menu permanently*/
 
     ul.menu {
       display: none;
     }
 
+    .sub-menu {
+      display:none;
+    }
     ul.nav-expanded {
       display: block;
     }

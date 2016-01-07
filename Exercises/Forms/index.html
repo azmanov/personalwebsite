@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<head>
+			<!--The <title> element defines the title of the document.-->
+			<title>FORMS</title>
+			<!--Define the author of a page-->
+			<meta name="author" content="David Jimenez">
+			<!--Define a description of your web page-->
+			<meta name="description" content="Interaction with the user. Forms"> 
+			<!--Define keywords for search engines-->
+			<meta name="Keywords" content="HTML, definitions, tag, elements, S5, EEB4, Forms, Input, Text, Password, Checkbox, Drop Down List, Select, Text Area">  
+			<!--Define the character set used--> 
+			<meta http-equiv="content-type" content="text/html; charset=utf-8">
+		</head>
+
+</head>
+
+<body bgcolor="#F4CDB8">
+<!--<table width="1200px" border="0">-->
+<table width="1200px" border="0">
+<!--heading-->
+  <tr>
+    <td colspan="3" bgcolor="#EBEBEA">
+      <h1 align="center">FORMS</h1>
+    </td>
+  </tr>
+<!--body of the table-blog-->
+  <tr valign="top">
+<!--Menu-->
+    <td bgcolor="#FF9966" width="15%" >
+      <table width="100%" border="0">
+		    <tr>
+          <td>
+            <ol type="I"><h3 style="padding:10px">INDEX</h3>
+		        	<li><b>Input</b></li>
+		         		<ol>
+		    	      <li>Text</li>
+					      <li>Password</li>
+					      <li>Submit</li>
+					      <li>Radio Button</li>
+					      <li>Check Box</li>
+					      <li>Button</li>
+				    </ol>
+			        <br>
+			         <li><b>Select element:</b> Drop Down List</li><br>
+			         <li><b>Textarea</b> element</li>
+			     </ol>
+				
+				
+		       </td>
+         </tr>
+        
+        </table>
+    </td>
+<!--main central cell-->    
+    <td bgcolor="#FFFFFF" style="padding:20px" width="80%" >
+      <h2>Forms</h2>
+              <p align="justify"><font size="4">The <b>&lt;form&gt;</b> Element
+          HTML forms are used to collect user input.
+
+			The <b>&lt;form&gt;</b> element defines an HTML form. HTML forms contain form elements (Different types of input elements, checkboxes, radio buttons, submit buttons, and more.)
+			<br>
+<br></font>
+
+<ol type="I"><li><h2>Input</h2></li>
+
+	The <b>&lt;input&gt;</b> element is the most important form element.
+	The <b>&lt;input&gt;</b> element has many variations, depending on the type attribute.
+	Here are the types used in this chapter:
+</p>
+<!--input table-->
+	<table border="1">
+		<tr bgcolor="#A3CC7A"><td>Type</td><td>  Description</td></tr>
+		<tr><td bgcolor="#E3F0D7">Text </td><td> Defines normal text input</td></tr>
+		<tr><td bgcolor="#E3F0D7">Password </td><td>Defines a password field</td></tr>
+		<tr><td bgcolor="#E3F0D7">Submit </td><td> Defines a submit button (for submitting the form)</td></tr>
+		<tr><td bgcolor="#E3F0D7">Radio </td><td>Defines a checkbox</td></tr>
+		<tr><td bgcolor="#E3F0D7">Checkbox </td><td> Defines a submit button (for submitting the form)</td></tr>
+	</table>
+<hr>
+<ol>
+<!--input TEXT-->
+<li><h3>Input Text</h3></li>
+&lt;input type="text"> defines a one-line input field for text input:
+<br>
+<br>
+<u>Example</u><br>
+<code>
+&lt;form>
+  First name:&lt;br><br>
+  &lt;input type="text" name="firstname"><br>
+  &lt;br><br>
+  Last name:&lt;br><br>
+  &lt;input type="text" name="lastname"><br>
+&lt;/form><br>
+<br>
+</code>
+<form>
+  First name:<br>
+  <input type="text" name="firstname">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname">
+</form>
+<hr>
+<!--input PASSWORD-->
+<li><h3>Input Type: password</h3></li>
+&lt;input type="password"> defines a password field:<br>
+<br>
+<u>Example</u><br>
+<code>
+&lt;form><br>
+User name:&lt;br><br>
+&lt;input type="text" name="username"><br>
+User password:&lt;br><br>
+&lt;input type="password" name="psw"><br>
+&lt;/form><br></code>
+<br>
+<form>
+User name:<br>
+<input type="text" name="username">
+<br>
+User password:<br>
+<input type="password" name="psw">
+</form>
+<hr>
+<!--input SUBMIT-->
+<li><h3>Input Type: submit</h3></li>
+&lt;input type="submit"> defines a button for submitting form input to a form-handler.
+The form-handler is typically a server page with a script for processing input data.
+The form-handler is specified in the form's action attribute:
+<br><br>
+<u>Example</u><br>
+<code>
+&lt;form action="action_page.php"><br>
+First name:&lt;br><br>
+&lt;input type="text" name="firstname" value="Mickey"><br>
+&lt;br><br>
+Last name:&lt;br><br>
+&lt;input type="text" name="lastname" value="Mouse"><br>
+&lt;br>&lt;br><br>
+&lt;input type="submit" value="Submit"><br>
+&lt;/form>
+</code>
+<br>
+<br>
+<form action="action_page.php">
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form>
+<br>
+<hr>
+<!--input RADIO BUTTON-->
+<li><h3>Input Radio Button</h3></li>
+&lt;input type="radio"> defines a radio button.
+
+Radio buttons let a user select ONE of a limited number of choices:<br>
+<br>
+<u>Example</u><br>
+<code>
+&lt;form><br>
+  &lt;input type="radio" name="sex" value="male" checked>Male<br>
+  &lt;br><br>
+  &lt;input type="radio" name="sex" value="female">Female<br>
+&lt;/form>
+</code>
+<br>
+<br>
+<form>
+  <input type="radio" name="sex" value="male" checked>Male
+  <br>
+  <input type="radio" name="sex" value="female">Female
+</form>
+<br>
+<hr>
+<!--input CHECKBOX-->
+<li><h3>Input Type: checkbox</h3></li>
+&lt;input type="checkbox"> defines a checkbox.
+
+Checkboxes let a user select ZERO or MORE options of a limited number of choices.<br><br>
+
+<u>Example</u><br>
+<code>
+&lt;form><br>
+&lt;input type="checkbox" name="vehicle1" value="Bike"> I have a bike<br>
+&lt;br><br>
+&lt;input type="checkbox" name="vehicle2" value="Car"> I have a car <br>
+&lt;/form><br>
+&lt;br><br><br>
+</code>
+<form>
+<input type="checkbox" name="vehicle1" value="Bike"> I have a bike
+<br>
+<input type="checkbox" name="vehicle2" value="Car"> I have a car 
+</form>
+<hr><br>
+<!--input BUTTON-->
+<li><h3>Input Type: button</h3></li>
+&lt;input type="button"> defines a button:<br><br>
+
+<u>Example</u><br>
+<code>
+&lt;input type="button" onclick="alert('Hello World!')" value="Click Me!">
+<br><br>
+<input type="button" onclick="alert('Hello World!')" value="Click Me!">
+</code>
+<br>
+<br>
+
+</ol>
+<hr>
+<!--select DROP DOWN LIST -->
+<li><h3>The &lt;select> Element (Drop-Down List)</h3></li>
+<p>The &lt;select> element defines a drop-down list:<br><br>
+
+<u>Example</u><br>
+<code>
+&lt;select name="cars"><br>
+  &lt;option value="volvo">Volvo&lt;/option><br>
+  &lt;option value="saab">Saab&lt;/option><br>
+  &lt;option value="fiat">Fiat&lt;/option><br>
+  &lt;option value="audi">Audi&lt;/option><br>
+&lt;/select><br><br>
+</code>
+<select name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<br>
+<hr>
+<!--text area-->
+<li><h3>The &lt;textarea> Element</h3></li>
+The &lt;textarea> element defines a multi-line input field (a text area):<br><br>
+
+<u>Example</u><br>
+<code>
+&lt;textarea name="message" rows="10" cols="30"><br>
+The cat was playing in the garden.<br>
+&lt;/textarea><br>
+&lt;br>&lt;br><br>
+&lt;textarea name="message" rows="10" cols="30"><br>
+The cat was playing in the garden.<br>
+&lt;/textarea><br>
+<br>
+</code>
+<textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea><br>
+<br><br>
+<li><h2>Exercise</h2>
+<p><font size="5">ADD IN THIS PART OF THE SITE THE QUESTIONNAIRE</font></p>
+<hr>
+<p>Save this website into the folder <b>/Share_eleve/_ICT2015-16/S5/<i>Your_Course_folder</i>/Forms exercise/<i>(Introduce your name).html</i></b></p> 
+<!-- EXERCISE ZONE-->
+
+  <h1>Personal Questionnaire</h1>
+  
+  <form>
+    
+    
+    Name:  <br>
+    <input type="text" name="firstname"> <br>
+    <br>
+    Sex
+  
+    <br>
+    <input type="radio" name="sex" value="male">Male 
+    <br>
+    <input type="radio" name="sex" value="female">Female <br>
+    <br>
+      Number of siblings
+<br>
+    <input type="text">  <br> <br>
+      Spoken language
+<br>
+    <br>
+    
+    <input type="checkbox" name="english" value = "english"> English <br>
+    <input type="checkbox" name="French" value = "French"> French <br>
+    <input type="checkbox" name="български" value = "български"> български <br>
+    <input type="checkbox" name="español" value = "español"> Español <br>
+    
+    <br>
+    Comments: <br>
+    <textarea name="message" rows="10" cols="100"> 
+      Stuff happened
+    </textarea>
+    
+    <input type="button" onclick="alert('I sent your stuff')" value="Submit"> 
+
+    <input type="reset" alertvalue="Send drafts" value="reset">
+  
+</form>
+
+  
+<hr>
+
+
+
+
+
+
+
+
+<!---END of EXERCISE ZONE-->
+<br>
+<br>
+<hr>
+</li>
+</ol>
+</td>
+<!--banner left-->
+<td bgcolor="#EBEBEA">
+</td>
+</tr>
+
+<!--copyright footer-->
+  <tr>
+    <td colspan="3" >
+      <p align="center"> Copyright 2012 <a href="http://www.amazon.com/30-Second-Maths-Richard-J-Brown/dp/1848313691" target="_blank">Richard Brown "30-SECOND MATHS"</a></p>
+    </td>
+  </tr>
+
+</body>
+</html>
